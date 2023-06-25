@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista Usuario</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comic+Neue:wght@300&family=Dosis:wght@500&family=Exo:wght@300&family=Lato:wght@300&family=Lobster&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="fuente-body">
+    <header>
+        <nav class="navbar navbar-expand-lg colorMenu fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="/img/logo.png" alt="" width="110px" height="50px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item linksMenuCentralUsuario ">
+                            <a class="nav-link active fs-4 " style="color: #DBDBEB;" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item linksMenuCentralUsuario ">
+                            <a class="nav-link fs-4" style="color: #DBDBEB;" href="vistaUsuarioLogueado.html">Películas y series</a>
+                        </li>
+                        <li class="nav-item linksMenuCentralUsuario ">
+                            <a class="nav-link fs-4" style="color: #DBDBEB;" href="listaUsuario.html">Mi lista</a>
+                        </li>
+                        <li class="nav-item linksMenuCentralUsuario ">
+                            <a class="nav-link fs-4" style="color: #DBDBEB;" href="sobrenosotros.html">Sobre nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end px-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav  ">
+                        <li class="nav-item dropdown linksMenuCentralUsuario ">
+                            <a class="nav-link dropdown-toggle fs-4 " style="color: #DBDBEB;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Más opciones
+                  </a>
+                            <ul class="dropdown-menu justify-content-end ">
+                                <li class=" "><a class="dropdown-item fs-4" href="error404.html">Configuración</a></li>
+                                <li class=" "><a class="dropdown-item fs-4" href="carrito.html">Carrito</a></li>
+                                <li><button class="dropdown-item fs-4" href="" id="logout">Cerrar sesión</button></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <main class="fondoMainUsuarioLogueado">
+        <div id="carouselExampleDark" class="carousel carousel-fade slide ">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="https://media.diariopopular.com.ar/p/3f942bfe35fb7ca34d831f1040a7dc4c/adjuntos/143/imagenes/008/088/0008088529/1200x675/smart/perfil-falsowebp.png" class="d-block w-100 img-fluid " alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>PERFIL FALSO</h5>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://www.sinspoiler.com/wp-content/uploads/2022/12/sinspoiler-los-renglones-torcidos-de-dios2-1.jpg" class="d-block w-100 img-fluid " alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>LOS RENGLONES TORCIDOS DE DIOS</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="data:image/jpeg;base64,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"
+                        class="d-block w-100 img-fluid " alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>LOS CRIMENES DE LA ACADEMIA</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="container-fluid">
+                <div class="row justify-content-end ">
+                    <div class="col-sm-12 col-md-4 col-lg-4 pt-3">
+                        <form  role="search">
+                            <input  name="search" id="idInputSearch"  class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" >
+                            <div id="msgErrSearch" class="form-text ">DEBE INGRESAR UN TÍTULO O GÉNERO DE PELÍCULA/SERIE PARA BUSCAR</div>
+
+                        </form>
+                    </div>
+                </div>
+                <h4 class="colorTextoUsuario fs-1">Todas las películas</h4>
+                <div id="divCards" class="row justify-content-center fondoMainUsuarioLogueado ">
+                            <!-- aqui se cargan las cards -->
+                </div>
+        </div>
+    </main>
+    <footer class="detFooter fs-5 text-center">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-2 col-lg-3 pt-4">
+                    <img src="/img/logoColorLila.png" alt="" width="190px" height="120px">
+                </div>
+            </div>
+            <div class="row justify-content-between pt-5 pb-5">
+                <div class="col-sm-12 col-md-2 col-lg-2">
+                    <a href="error404.html" class="linkFooter">Política de privacidad</a>
+                </div>
+                <div class="col-sm-12 col-md-2 col-lg-2">
+                    <a href="error404.html" class="linkFooter">Ayuda</a>
+                </div>
+                <div class="col-sm-12 col-md-2 col-lg-2">
+                    <a href="error404.html" class="linkFooter">Términos de uso</a>
+                </div>
+                <div class="col-sm-12 col-md-2 col-lg-2">
+                    <a href="https://goo.gl/maps/KCtNriVoH4WxpcAEA" class="linkFooter">Ubicación</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="/js/arrayDePeliculas.js"></script>
+    <script src="../js/privateRoute.js" ></script>
+    <script src="../js/buttonLogout.js" ></script>
+    <script src="https://kit.fontawesome.com/b629b846fa.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/admin.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comic+Neue:wght@300&family=Dosis:wght@500&family=Exo:wght@300&family=Lato:wght@300&family=Lobster&display=swap" rel="stylesheet">
+    <title>Administrador</title>
+    
+</head>
+<body >
+  <header>
+    <nav class="navbar navbar-expand-lg colorMenu fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/img/logo.png" alt="" width="110px" height="50px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item linksMenuCentralUsuario ">
+                        <a class="nav-link active fs-4 " style="color: #DBDBEB;" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item linksMenuCentralUsuario ">
+                        <a class="nav-link fs-4" style="color: #DBDBEB;" href="/html/vistaUsuarioLogueado.html">Películas y series</a>
+                    </li>
+                    <li class="nav-item linksMenuCentralUsuario ">
+                        <a class="nav-link fs-4" style="color: #DBDBEB;" href="/html/listaUsuario.html">Mi lista</a>
+                    </li>
+                    <li class="nav-item linksMenuCentralUsuario ">
+                        <a class="nav-link fs-4" style="color: #DBDBEB;" href="/html/sobrenosotros.html">Sobre nosotros</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end px-5" id="navbarSupportedContent">
+                <ul class="navbar-nav  ">
+                    <li class="nav-item dropdown linksMenuCentralUsuario ">
+                        <a class="nav-link dropdown-toggle fs-4 " style="color: #DBDBEB;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Más opciones
+              </a>
+                        <ul class="dropdown-menu justify-content-end ">
+                            <li class=" "><a class="dropdown-item fs-4" href="/html/error404.html">Configuración</a></li>
+                            <li class=" "><a class="dropdown-item fs-4" href="/html/carrito.html">Carrito</a></li>
+                            <li><a class="dropdown-item fs-4" href="#">Cerrar sesión</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+</header>
+    
+        <!-- Tabs -->
+        <nav >
+            <div class="nav nav-tabs margenAdmin" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Productos</button>
+
+              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Usuarios</button>
+             
+            </div>
+
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+
+                    <div class="contenedor-producto table-responsive">
+
+                        <table id="movieTable">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Genero</th>
+                                    <th>Descripción</th>
+                                    <th>Año</th>
+                                    <th>Acción</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbodyMovie">
+                                
+                            </tbody>
+                        </table>
+
+
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+
+                    <div class="contenedor-usuarios">
+                        <table id="userTable">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Usuario</th>
+                                    <th>Role</th>
+                                    <th>Acción</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbodyUser">  
+                              
+                            </tbody>
+                        </table>
+
+
+
+
+
+                    </div>
+
+
+
+                </div>
+                
+                
+              </div>
+          </nav>
+
+
+
+
+
+
+
+
+    </main>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b629b846fa.js" crossorigin="anonymous"></script>
+    <script src="../js/adminPeliculas.js" ></script>
+    <script src="../js/adminUser.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+[
+    {
+      "precio": 500,
+      "id": 1,
+      "title": "La sirenita",
+      "thumbnailUrl": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/9om4EHnxc5XgTniEnXHn7jPD4nZ.jpg"
+    },
+    {
+      "precio": 300,
+      "id": 2,
+      "title": "Ant-Man y la Avispa: Quantumanía ",
+      "thumbnailUrl": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/lKHy0ntGPdQeFwvNq8gK1D0anEr.jpg"
+    },
+    {
+      "precio": 100,
+      "id": 3,
+      "title": "Criminales a la vista",
+      "thumbnailUrl": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/3jce1QvM2sma0TKYckNmIKzjhHC.jpg"
+    },
+    {
+      "precio": 50,
+      "id": 4,
+      "title": "Siete reyes deben morir",
+      "thumbnailUrl": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/55PJNDJbD4Q9jFO4vaCnNl9dYEv.jpg"
+    },
+    {
+      "precio": 10,
+      "id": 5,
+      "title": "Transformers: El despertar de las bestias",
+      "thumbnailUrl": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/3oypSaTizrfBbpIeRs8tTOF2EqV.jpg"
+    },
+    {
+      "precio": 150,
+      "id": 6,
+      "title": "Súper Mario Bros. La película",
+      "thumbnailUrl": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/zNKs1T0VZuJiVuhuL5GSCNkGdxf.jpg"
+    }
+  ]

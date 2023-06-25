@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.tab-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 88vh;
+    background-color: #080957;
+}
+
+.contenedor-producto{
+    border: 1px solid white;
+    margin-top: 50px;
+}
+
+.contenedor-usuarios{
+    border: 1px solid white;
+
+}
+
+table{
+    color: #fff;
+    font-size: 20px;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+th{
+    padding: 20px 15px
+}
+
+td{
+    padding: 15px;
+    border-bottom: 1px solid black;
+    border-width: 1px;
+
+}
+
+tbody tr:hover{
+    background: #090979;
+}
+
+.buttonEditMovie{
+    color: #ff6d02;
+}
